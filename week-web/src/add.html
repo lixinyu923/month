@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/add.css">
+    <link rel="stylesheet" href="./css/mui.picker.css">
+    <link rel="stylesheet" href="./css/mui.poppicker.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./fonts2/iconfont.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="top">
+            <p><i class="iconfont icon-xiangzuo"></i></p>
+            <p>新增地址</p>
+            <p></p>
+        </div>
+        <div class="center">
+            <div class="inp">
+                <p>姓名</p> <input type="text">
+            </div>
+            <div class="inp">
+                <p>手机号码</p> <input type="text"> <p>+86</p>
+            </div>
+            <div class="inp">
+                <p>固定电话(选填)</p> <input type="text">
+            </div>
+            <div class="inp city">
+                <p>省市区</p> <input type="text">
+                <!-- <button id='showCityPicker3' class="mui-btn mui-btn-block" type='button'>省市区</button>
+				<div id='cityResult3' class="ui-alert"></div> -->
+            </div>
+            <div class="inp">
+                <p>详细地址</p> <input type="text">
+            </div>
+        </div>
+        <div class="footer">
+            <p class="adduse">完成</p>
+        </div>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main'],()=>{
+            require(['add'])
+        })
+    </script>
+</body>
+
+</html>

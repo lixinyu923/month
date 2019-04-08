@@ -1,0 +1,273 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .box .top {
+    width: 100%;
+    height: 1.6rem;
+    background: #ff9862;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6rem;
+    text-align: center;
+    padding: 0 0.26667rem;
+    box-sizing: border-box; }
+    .box .top i {
+      font-size: 0.53333rem;
+      color: #fff7f4 !important; }
+    .box .top p {
+      font-size: 0.53333rem;
+      color: #fff7f4 !important; }
+  .box .center {
+    flex: 1;
+    overflow: auto;
+    background: #eee; }
+    .box .center .container {
+      width: 100%;
+      padding: 0.26667rem 0.53333rem;
+      box-sizing: border-box; }
+      .box .center .container li {
+        width: 100%;
+        border-radius: 0.26667rem;
+        padding: 0.26667rem 0.21333rem;
+        box-sizing: border-box;
+        background: #fff;
+        margin: 0.26667rem 0; }
+        .box .center .container li .namePhone {
+          width: 100%;
+          height: 0.8rem;
+          font-size: 0.53333rem;
+          color: #000; }
+          .box .center .container li .namePhone > span:nth-child(2) {
+            font-size: 0.42667rem;
+            color: grey;
+            margin-left: 0.8rem; }
+        .box .center .container li .address {
+          font-size: 0.42667rem;
+          color: grey;
+          width: 100%;
+          height: 1.33333rem;
+          margin: 0.13333rem 0; }
+        .box .center .container li .btnsCont {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          border-top: 0.02667rem solid #eee; }
+          .box .center .container li .btnsCont .setOne {
+            width: 50%;
+            color: grey; }
+            .box .center .container li .btnsCont .setOne .checkBox {
+              display: inline-block;
+              width: 0.4rem;
+              height: 0.4rem;
+              border-radius: 50%;
+              margin-top: 0.13333rem;
+              border: 0.02667rem solid #ccc; }
+              .box .center .container li .btnsCont .setOne .checkBox.active {
+                background: #ff9862; }
+          .box .center .container li .btnsCont .opration > span {
+            padding: 0.13333rem 0.34667rem;
+            border-radius: 0.26667rem;
+            color: grey;
+            border: 0.02667rem solid #ccc;
+            margin: 0.13333rem 0.26667rem;
+            display: inline-block; }
+  .box .footer {
+    width: 100%;
+    height: 1.46667rem;
+    background: #fdfdfd;
+    color: #fdfdfd;
+    padding: 0.13333rem 0.53333rem;
+    box-sizing: border-box; }
+    .box .footer p {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.61333rem;
+      background: #ff9862;
+      text-align: center;
+      line-height: 1.2rem;
+      font-size: 0.53333rem;
+      color: #fff7f4 !important; }
+      .box .footer p i {
+        font-size: 0.48rem; }
+
+.mui-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none; }

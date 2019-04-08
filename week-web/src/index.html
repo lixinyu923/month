@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts2/iconfont.css">
+</head>
+<body>
+    
+    <div class="box">
+        <div class="top">
+            <p><i class="iconfont icon-xiangzuo"></i></p>
+            <p>地址管理</p>
+            <p></p>
+        </div>
+        <div class="center">
+          <ul class="container">
+            <!-- <li>
+                <p class="namePhone">
+                    <span>苏苏</span>
+                    <span>123456789012</span>
+                </p>
+                <div class="address">
+                    省市<br/>详细地址
+                </div>
+                <div class="btnsCont">
+                    <p class="setOne">
+                        <span class="checkBox active"></span>设为默认地址
+                    </p>
+                    <p class="opration">
+                        <span>删除</span>
+                        <span>修改</span>
+                    </p>
+                </div>
+            </li> -->
+          </ul>
+
+        </div>
+        <div class="footer">
+            <p class="adduse"><i class="iconfont icon-jia"></i> 新建地址</p>
+        </div>
+    </div>
+
+    <div class="mui-content">
+			<div class="mui-content-padded" style="margin: 5px;text-align: center;">
+				<button id='confirmBtn' type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认消息框</button>
+				<div id="info"></div>
+			</div>
+		</div>
+
+    <script src="./js/libs/require.js"></script>
+    <script>
+        require(['./js/main'],()=>{
+            require(['index'])
+        })
+    </script>
+</body>
+</html>
